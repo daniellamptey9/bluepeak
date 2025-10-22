@@ -7,14 +7,14 @@
     <!-- SFTP Sync Test - Updated: December 22, 2025 -->
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
+    <link rel="icon" type="image/png" href="/images/fav.png">
     
     <!-- Production CSS -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app-JvQb1QrV.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-OGDNwmkh.css') }}">
+    <link rel="stylesheet" href="/build/assets/app-JvQb1QrV.css">
+    <link rel="stylesheet" href="/build/assets/app-OGDNwmkh.css">
     
     <!-- Production JS -->
-    <script src="{{ asset('build/assets/app-Bj43h_rG.js') }}" defer></script>
+    <script src="/build/assets/app-Bj43h_rG.js" defer></script>
 </head>
 <body class="bg-white text-secondary-900">
     <!-- Navigation -->
@@ -24,7 +24,7 @@
                 <!-- Left Container - Logo -->
                 <div class="flex items-center justify-start">
                     <a href="{{ route('home') }}" class="flex items-center hover:opacity-80 transition-opacity">
-                        <img src="{{ asset('images/bluebridge.png') }}" alt="Bluebridge IT Solutions" class="h-16 w-auto">
+                        <img src="/images/bluebridge.png" alt="Bluebridge IT Solutions" class="h-16 w-auto">
                     </a>
                 </div>
 

@@ -16,11 +16,11 @@
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700" rel="stylesheet" />
 
     <!-- Production CSS -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app-JvQb1QrV.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-OGDNwmkh.css') }}">
+    <link rel="stylesheet" href="/build/assets/app-JvQb1QrV.css">
+    <link rel="stylesheet" href="/build/assets/app-OGDNwmkh.css">
     
     <!-- Production JS -->
-    <script src="{{ asset('build/assets/app-Bj43h_rG.js') }}" defer></script>
+    <script src="/build/assets/app-Bj43h_rG.js" defer></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Navigation -->
