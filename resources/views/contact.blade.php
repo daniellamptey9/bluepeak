@@ -152,6 +152,7 @@
                             <div>
                                 <label for="name" class="block text-sm font-medium text-secondary-900 mb-2">Full Name *</label>
                                 <input type="text" id="name" name="name" required 
+                                       autocomplete="name"
                                        class="w-full px-4 py-3 bg-white border border-secondary-300 rounded-lg text-secondary-900 placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('name') border-red-400 @enderror"
                                        placeholder="Enter your full name"
                                        value="{{ old('name') }}">
@@ -162,6 +163,7 @@
                             <div>
                                 <label for="email" class="block text-sm font-medium text-secondary-900 mb-2">Email Address *</label>
                                 <input type="email" id="email" name="email" required 
+                                       autocomplete="email"
                                        class="w-full px-4 py-3 bg-white border border-secondary-300 rounded-lg text-secondary-900 placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('email') border-red-400 @enderror"
                                        placeholder="Enter your email"
                                        value="{{ old('email') }}">
@@ -175,6 +177,7 @@
                             <div>
                                 <label for="phone" class="block text-sm font-medium text-secondary-900 mb-2">Phone Number</label>
                                 <input type="tel" id="phone" name="phone" 
+                                       autocomplete="tel"
                                        class="w-full px-4 py-3 bg-white border border-secondary-300 rounded-lg text-secondary-900 placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('phone') border-red-400 @enderror"
                                        placeholder="Enter your phone number"
                                        value="{{ old('phone') }}">
@@ -185,6 +188,7 @@
                             <div>
                                 <label for="company" class="block text-sm font-medium text-secondary-900 mb-2">Company Name</label>
                                 <input type="text" id="company" name="company" 
+                                       autocomplete="organization"
                                        class="w-full px-4 py-3 bg-white border border-secondary-300 rounded-lg text-secondary-900 placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('company') border-red-400 @enderror"
                                        placeholder="Enter your company name"
                                        value="{{ old('company') }}">
@@ -197,6 +201,7 @@
                         <div>
                             <label for="subject" class="block text-sm font-medium text-secondary-900 mb-2">Subject *</label>
                             <select id="subject" name="subject" required 
+                                    autocomplete="off"
                                     class="w-full px-4 py-3 bg-white border border-secondary-300 rounded-lg text-secondary-900 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('subject') border-red-400 @enderror">
                                 <option value="">Select a subject</option>
                                 <option value="General Inquiry" {{ old('subject') == 'General Inquiry' ? 'selected' : '' }}>General Inquiry</option>
@@ -215,6 +220,7 @@
                         <div>
                             <label for="message" class="block text-sm font-medium text-secondary-900 mb-2">Message *</label>
                             <textarea id="message" name="message" rows="5" required 
+                                      autocomplete="off"
                                       class="w-full px-4 py-3 bg-white border border-secondary-300 rounded-lg text-secondary-900 placeholder-secondary-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 @error('message') border-red-400 @enderror"
                                       placeholder="Tell us about your IT needs and how we can help...">{{ old('message') }}</textarea>
                             @error('message')
@@ -427,6 +433,7 @@
         <div class="p-4 border-t border-gray-200">
             <div class="flex space-x-2">
                 <input type="text" id="chatInput" placeholder="Type your message..." 
+                       autocomplete="off"
                        class="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm">
                 <button id="sendMessage" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
