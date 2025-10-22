@@ -219,7 +219,7 @@
   }
 
   .container-custom {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
     overflow-x: hidden !important;
     max-width: 100vw !important;
     box-sizing: border-box !important;
