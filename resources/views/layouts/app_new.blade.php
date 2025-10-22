@@ -6,14 +6,14 @@
     <title>@yield('title', 'Bluebridge IT Solutions - Professional IT Services & Cloud Solutions')</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
+    <link rel="icon" type="image/png" href="/images/fav.png">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/app-additional.css') }}">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app-additional.css">
     
     <!-- JavaScript -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="/js/app.js" defer></script>
 </head>
 <body class="bg-white text-secondary-900">
     <!-- Navigation -->

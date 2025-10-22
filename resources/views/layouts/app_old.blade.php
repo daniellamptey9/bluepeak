@@ -9,18 +9,18 @@
     <meta name="description" content="@yield('description', 'BluePeak MSP provides comprehensive IT services including cloud solutions, cybersecurity, network management, and 24/7 support for businesses.')">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
+    <link rel="icon" type="image/png" href="/images/fav.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/app-additional.css') }}">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app-additional.css">
     
     <!-- JavaScript -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="/js/app.js" defer></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Navigation -->
