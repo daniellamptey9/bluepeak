@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORB Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-item { margin: 20px 0; padding: 15px; border: 1px solid #ddd; }
+        .success { color: green; }
+        .error { color: red; }
+        .warning { color: orange; }
+        img { max-width: 100px; margin: 5px; border: 2px solid transparent; }
+    </style>
+</head>
+<body>
+    <h1>Cross-Origin Resource Blocking (ORB) Test</h1>
+    
+    <div class="test-item">
+        <h3>PNG Images Test</h3>
+        <img src="/images/bluebridge.png" alt="Bluebridge PNG" id="png-test">
+        <p>Status: <span id="png-status">Testing...</span></p>
+    </div>
+    
+    <div class="test-item">
+        <h3>SVG Images Test</h3>
+        <img src="/images/logos/microsoft.svg" alt="Microsoft SVG" id="svg-test">
+        <p>Status: <span id="svg-status">Testing...</span></p>
+    </div>
+    
+    <div class="test-item">
+        <h3>JPG Images Test</h3>
+        <img src="/images/hero/it-infrastructure.jpg" alt="IT Infrastructure JPG" id="jpg-test">
+        <p>Status: <span id="jpg-status">Testing...</span></p>
+    </div>
+    
+    <div class="test-item">
+        <h3>CSS Test</h3>
+        <link rel="stylesheet" href="/css/app.css" id="css-test">
+        <p>Status: <span id="css-status">Testing...</span></p>
+    </div>
+    
+    <div class="test-item">
+        <h3>JavaScript Test</h3>
+        <script src="/js/app.js" id="js-test"></script>
+        <p>Status: <span id="js-status">Testing...</span></p>
+    </div>
+    
+    <div class="test-item">
+        <h3>Console Log</h3>
+        <div id="console-log" style="background: #f5f5f5; padding: 10px; font-family: monospace; max-height: 200px; overflow-y: auto;">
+        </div>
+    </div>
+    
+    <script>
+        const log = document.getElementById('console-log');
+        
+        function addLog(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.innerHTML = `<span style="color: #666;">[${timestamp}]</span> <span style="color: ${type === 'error' ? 'red' : type === 'success' ? 'green' : 'blue'};">${message}</span>`;
+            log.appendChild(logEntry);
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        // Test image loading
+        const images = {
+            'png-test': '/images/bluebridge.png',
+            'svg-test': '/images/logos/microsoft.svg',
+            'jpg-test': '/images/hero/it-infrastructure.jpg'
+        };
+        
+        Object.entries(images).forEach(([id, src]) => {
+            const img = document.getElementById(id);
+            const status = document.getElementById(id.replace('-test', '-status'));
+            
+            img.addEventListener('load', function() {
+                status.innerHTML = '<span class="success">✓ Loaded successfully</span>';
+                addLog(`${src} loaded successfully`, 'success');
+            });
+            
+            img.addEventListener('error', function(e) {
+                status.innerHTML = '<span class="error">✗ Failed to load</span>';
+                addLog(`${src} failed to load: ${e.message || 'Unknown error'}`, 'error');
+            });
+        });
+        
+        // Test CSS loading
+        const cssLink = document.getElementById('css-test');
+        const cssStatus = document.getElementById('css-status');
+        
+        cssLink.addEventListener('load', function() {
+            cssStatus.innerHTML = '<span class="success">✓ CSS loaded successfully</span>';
+            addLog('CSS loaded successfully', 'success');
+        });
+        
+        cssLink.addEventListener('error', function(e) {
+            cssStatus.innerHTML = '<span class="error">✗ CSS failed to load</span>';
+            addLog(`CSS failed to load: ${e.message || 'Unknown error'}`, 'error');
+        });
+        
+        // Test JavaScript loading
+        const jsScript = document.getElementById('js-test');
+        const jsStatus = document.getElementById('js-status');
+        
+        jsScript.addEventListener('load', function() {
+            jsStatus.innerHTML = '<span class="success">✓ JavaScript loaded successfully</span>';
+            addLog('JavaScript loaded successfully', 'success');
+        });
+        
+        jsScript.addEventListener('error', function(e) {
+            jsStatus.innerHTML = '<span class="error">✗ JavaScript failed to load</span>';
+            addLog(`JavaScript failed to load: ${e.message || 'Unknown error'}`, 'error');
+        });
+        
+        // Check for ORB errors in console
+        const originalConsoleError = console.error;
+        console.error = function(...args) {
+            const message = args.join(' ');
+            if (message.includes('ORB') || message.includes('ERR_BLOCKED_BY_ORB')) {
+                addLog(`ORB Error detected: ${message}`, 'error');
+            }
+            originalConsoleError.apply(console, args);
+        };
+        
+        addLog('ORB test page loaded', 'info');
+        
+        // Check if resources are accessible via fetch
+        setTimeout(() => {
+            fetch('/images/bluebridge.png')
+                .then(response => {
+                    if (response.ok) {
+                        addLog('PNG accessible via fetch', 'success');
+                    } else {
+                        addLog(`PNG fetch failed: ${response.status}`, 'error');
+                    }
+                })
+                .catch(error => {
+                    addLog(`PNG fetch error: ${error.message}`, 'error');
+                });
+        }, 1000);
+    </script>
+</body>
+</html>
