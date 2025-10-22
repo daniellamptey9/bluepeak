@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Test</title>
+</head>
+<body>
+    <h1>Debug Test</h1>
+    
+    <h2>Testing Files:</h2>
+    <ul>
+        <li><a href="/app.css" target="_blank">app.css</a></li>
+        <li><a href="/app.js" target="_blank">app.js</a></li>
+        <li><a href="/bluebridge.png" target="_blank">bluebridge.png</a></li>
+        <li><a href="/it-infrastructure.jpg" target="_blank">it-infrastructure.jpg</a></li>
+        <li><a href="/css/app-additional.css" target="_blank">css/app-additional.css</a></li>
+    </ul>
+    
+    <h2>Testing Laravel Asset Helper:</h2>
+    <p>This page tests if files are accessible directly.</p>
+    
+    <script>
+        console.log('Debug page loaded');
+        
+        // Test if files are accessible
+        fetch('/app.css')
+            .then(response => {
+                console.log('app.css status:', response.status);
+                if (!response.ok) {
+                    console.error('app.css failed:', response.status, response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('app.css error:', error);
+            });
+            
+        fetch('/app.js')
+            .then(response => {
+                console.log('app.js status:', response.status);
+                if (!response.ok) {
+                    console.error('app.js failed:', response.status, response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('app.js error:', error);
+            });
+    </script>
+</body>
+</html>

@@ -32,7 +32,7 @@
                         <div class="relative">
                             <!-- Main Image with Ashby-style curved borders -->
                             <div class="hero-image-container">
-                                <img src="{{ asset('it-infrastructure.jpg') }}" 
+                                <img src="/it-infrastructure.jpg" 
                                      alt="Modern IT Infrastructure and Data Center" 
                                      class="w-full h-96 object-cover">
                                 
@@ -77,7 +77,7 @@
                         <div class="relative">
                             <!-- Main Cloud Image with Ashby-style curved borders -->
                             <div class="hero-image-container">
-                                <img src="{{ asset('cloud-computing.jpg') }}" 
+                                <img src="/cloud-computing.jpg" 
                                      alt="Cloud Computing and Data Centers" 
                                      class="w-full h-96 object-cover">
                                 

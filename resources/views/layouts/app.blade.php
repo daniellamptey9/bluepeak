@@ -10,11 +10,11 @@
     <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/app-additional.css') }}">
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="/css/app-additional.css">
     
     <!-- JavaScript -->
-    <script src="{{ asset('app.js') }}" defer></script>
+    <script src="/app.js" defer></script>
 </head>
 <body class="bg-white text-secondary-900">
     <!-- Navigation -->
@@ -24,7 +24,7 @@
                 <!-- Left Container - Logo -->
                 <div class="flex items-center justify-start">
                     <a href="{{ route('home') }}" class="flex items-center hover:opacity-80 transition-opacity">
-                        <img src="{{ asset('bluebridge.png') }}" alt="Bluebridge IT Solutions" class="h-16 w-auto">
+                        <img src="/bluebridge.png" alt="Bluebridge IT Solutions" class="h-16 w-auto">
                     </a>
                 </div>
 
