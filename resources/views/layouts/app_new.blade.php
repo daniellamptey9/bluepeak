@@ -8,8 +8,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
     
-    <!-- Tailwind CSS -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Production CSS -->
+    <link rel="stylesheet" href="{{ asset('build/assets/app-JvQb1QrV.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-OGDNwmkh.css') }}">
+    
+    <!-- Production JS -->
+    <script src="{{ asset('build/assets/app-Bj43h_rG.js') }}" defer></script>
 </head>
 <body class="bg-white text-secondary-900">
     <!-- Navigation -->

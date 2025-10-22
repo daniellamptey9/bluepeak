@@ -15,8 +15,12 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700" rel="stylesheet" />
 
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Production CSS -->
+    <link rel="stylesheet" href="{{ asset('build/assets/app-JvQb1QrV.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-OGDNwmkh.css') }}">
+    
+    <!-- Production JS -->
+    <script src="{{ asset('build/assets/app-Bj43h_rG.js') }}" defer></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Navigation -->
