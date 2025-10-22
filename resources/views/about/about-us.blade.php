@@ -173,7 +173,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                <img src="/images/team/ceo.jpg" 
                      alt="CEO" 
                      class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                 <h3 class="text-xl font-bold text-secondary-900 mb-2 text-center">Michael Johnson</h3>
@@ -182,7 +182,7 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                <img src="/images/team/cto.jpg" 
                      alt="CTO" 
                      class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                 <h3 class="text-xl font-bold text-secondary-900 mb-2 text-center">Sarah Chen</h3>
@@ -191,7 +191,7 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                <img src="/images/team/coo.jpg" 
                      alt="COO" 
                      class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                 <h3 class="text-xl font-bold text-secondary-900 mb-2 text-center">David Rodriguez</h3>

@@ -40,7 +40,7 @@
             @foreach($featuredServices as $service)
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
                 <div class="h-48 relative overflow-hidden">
-                    <img src="{{ $service->image ?: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' }}" 
+                    <img src="{{ $service->image ?: '/images/services/it-infrastructure.jpg' }}" 
                          alt="{{ $service->title }}" 
                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
@@ -84,7 +84,7 @@
             @foreach($services as $service)
             <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div class="h-40 relative overflow-hidden">
-                    <img src="{{ $service->image ?: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' }}" 
+                    <img src="{{ $service->image ?: '/images/services/it-infrastructure.jpg' }}" 
                          alt="{{ $service->title }}" 
                          class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>

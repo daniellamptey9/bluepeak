@@ -65,33 +65,31 @@
             </div>
             <div class="relative">
                 @php
-                    $serviceImages = [
-                        'it-support' => 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'cybersecurity' => 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'cybersecurity-awareness-training' => 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'it-remote-support' => 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'maintenance-contracts' => 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'small-business-it-support' => 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'it-helpdesk' => 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'managed-services' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'office-365' => 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'office-365-support' => 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'office-365-backup' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'microsoft-teams' => 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'microsoft-azure' => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'azure-virtual-machines' => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'azure-storage' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'azure-backup' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'google-workspace' => 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'amazon-web-services' => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'cloud-migration' => 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        
-                        // Sectors
-                        'healthcare' => 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'law-firms' => 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'finance' => 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'manufacturing' => 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                        'construction' => 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                                        $serviceImages = [
+                        'it-support' => '/images/services/it-infrastructure.jpg',
+                        'cybersecurity' => '/images/services/cloud-services.jpg',
+                        'cybersecurity-awareness-training' => '/images/services/cybersecurity.jpg',
+                        'it-remote-support' => '/images/services/it-support.jpg',
+                        'maintenance-contracts' => '/images/services/it-infrastructure.jpg',
+                        'small-business-it-support' => '/images/team/coo.jpg',
+                        'it-helpdesk' => '/images/services/it-support.jpg',
+                        'managed-services' => '/images/unsplash/banking-finance.jpg',
+                        'office-365' => '/images/services/cloud-services.jpg',
+                        'office-365-support' => '/images/services/cloud-services.jpg',
+                        'office-365-backup' => '/images/unsplash/banking-finance.jpg',
+                        'microsoft-teams' => '/images/services/cloud-services.jpg',
+                        'microsoft-azure' => '/images/hero/cloud-computing.jpg',
+                        'azure-virtual-machines' => '/images/hero/cloud-computing.jpg',
+                        'azure-storage' => '/images/unsplash/banking-finance.jpg',
+                        'azure-backup' => '/images/unsplash/banking-finance.jpg',
+                        'google-workspace' => '/images/services/cloud-services.jpg',
+                        'amazon-web-services' => '/images/hero/cloud-computing.jpg',
+                        'cloud-migration' => '/images/unsplash/cloud-migration.jpg',
+                        'healthcare' => '/images/unsplash/healthcare.jpg',
+                        'law-firms' => '/images/unsplash/law-firms.jpg',
+                        'finance' => '/images/unsplash/banking-finance.jpg',
+                        'manufacturing' => '/images/services/it-infrastructure.jpg',
+                        'construction' => '/images/unsplash/construction.jpg',
                     ];
                     $serviceImage = $serviceImages[$slug] ?? 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
                 @endphp

@@ -32,7 +32,7 @@
                         <div class="relative">
                             <!-- Main Image with Ashby-style curved borders -->
                             <div class="hero-image-container">
-                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                <img src="/images/hero/it-infrastructure.jpg" 
                                      alt="Modern IT Infrastructure and Data Center" 
                                      class="w-full h-96 object-cover">
                                 
@@ -77,7 +77,7 @@
                         <div class="relative">
                             <!-- Main Cloud Image with Ashby-style curved borders -->
                             <div class="hero-image-container">
-                                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                <img src="/images/hero/cloud-computing.jpg" 
                                      alt="Cloud Computing and Data Centers" 
                                      class="w-full h-96 object-cover">
                                 
