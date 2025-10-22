@@ -10,11 +10,11 @@
     <link rel="icon" type="image/png" href="/images/fav.png">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/app.css" onerror="this.href='/app.css'">
+    <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/app-additional.css">
     
     <!-- JavaScript -->
-    <script src="/js/app.js" onerror="this.src='/app.js'" defer></script>
+    <script src="/js/app.js" defer></script>
 </head>
 <body class="bg-white text-secondary-900">
     <!-- Navigation -->
@@ -24,7 +24,7 @@
                 <!-- Left Container - Logo -->
                 <div class="flex items-center justify-start">
                     <a href="{{ route('home') }}" class="flex items-center hover:opacity-80 transition-opacity">
-                        <img src="/images/bluebridge.png" alt="Bluebridge IT Solutions" class="h-16 w-auto" onerror="this.src='/bluebridge.png'">
+                        <img src="/images/bluebridge.png" alt="Bluebridge IT Solutions" class="h-16 w-auto">
                     </a>
                 </div>
 
