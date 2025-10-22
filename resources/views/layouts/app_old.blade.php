@@ -16,11 +16,11 @@
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/app.css" onerror="this.href='/app.css'">
-    <link rel="stylesheet" href="/css/app-additional.css" onerror="this.href='/app-additional.css'">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app-additional.css') }}">
     
     <!-- JavaScript -->
-    <script src="/js/app.js" onerror="this.src='/app.js'" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Navigation -->
@@ -30,7 +30,7 @@
                 <!-- Left Container - Logo -->
                 <div class="flex items-center justify-start">
                     <a href="{{ route('home') }}" class="flex items-center hover:opacity-80 transition-opacity">
-                        <img src="/images/bluebridge.png" alt="Bluebridge IT Solutions" class="h-16 w-auto" onerror="this.src='/bluebridge.png'">
+                        <img src="{{ asset('images/bluebridge.png') }}" alt="Bluebridge IT Solutions" class="h-16 w-auto">
                     </a>
                 </div>
 
