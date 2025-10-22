@@ -15,12 +15,12 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700" rel="stylesheet" />
 
-    <!-- Production CSS -->
-    <link rel="stylesheet" href="/build/assets/app-JvQb1QrV.css">
-    <link rel="stylesheet" href="/build/assets/app-OGDNwmkh.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app-additional.css') }}">
     
-    <!-- Production JS -->
-    <script src="/build/assets/app-Bj43h_rG.js" defer></script>
+    <!-- JavaScript -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <!-- Navigation -->
