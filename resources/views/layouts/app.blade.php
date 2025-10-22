@@ -7,7 +7,7 @@
     <!-- SFTP Sync Test - Updated: December 22, 2025 -->
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('images/fav.png') }}">
+    <link rel="icon" type="image/png" href="/images/fav.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="/app.css">
@@ -513,7 +513,7 @@
                 <!-- Company Info -->
                 <div class="md:col-span-2">
                     <div class="mb-4">
-                        <img src="{{ asset('images/bluebridge.png') }}" alt="Bluebridge IT Solutions" class="h-16 w-auto" style="filter: brightness(0) invert(1);">
+                        <img src="/images/bluebridge.png" alt="Bluebridge IT Solutions" class="h-16 w-auto" style="filter: brightness(0) invert(1);">
                     </div>
                     <p class="text-secondary-300 mb-6">
                         Your trusted partner for comprehensive IT services. We provide cutting-edge technology solutions 
