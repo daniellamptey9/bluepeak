@@ -27,10 +27,16 @@ body {
     background-color: #ffffff;
 }
 
-/* Ensure sections have proper spacing */
-section {
-    margin: 0 auto;
-    max-width: 1200px;
+/* Ensure sections with backgrounds are properly contained */
+section.bg-gradient-to-br,
+section.bg-white,
+section.bg-primary-50,
+section.bg-secondary-50 {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero section specific adjustments */
@@ -41,4 +47,32 @@ section {
 /* Navigation specific adjustments */
 nav .container-custom {
     max-width: 1200px !important;
+}
+
+/* Partners section - keep it centered */
+#partners {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Cloud services section - keep it centered */
+#cloud-services {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Testimonials section - keep it centered */
+#testimonials {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Contact section - keep it centered */
+#contact {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
