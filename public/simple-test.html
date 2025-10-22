@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Asset Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        img { max-width: 200px; margin: 10px; border: 2px solid transparent; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Simple Asset Test</h1>
+    
+    <div class="test">
+        <h2>Direct Image Test</h2>
+        <img src="/images/bluebridge.png" alt="Bluebridge Logo" 
+             onload="this.style.border='2px solid green'; console.log('Image loaded:', this.src);"
+             onerror="this.style.border='2px solid red'; console.error('Image failed:', this.src);">
+        <p>If you see a green border, the image loaded successfully.</p>
+    </div>
+    
+    <div class="test">
+        <h2>Hero Image Test</h2>
+        <img src="/images/hero/it-infrastructure.jpg" alt="IT Infrastructure" 
+             onload="this.style.border='2px solid green'; console.log('Hero image loaded:', this.src);"
+             onerror="this.style.border='2px solid red'; console.error('Hero image failed:', this.src);">
+        <p>If you see a green border, the hero image loaded successfully.</p>
+    </div>
+    
+    <div class="test">
+        <h2>Service Image Test</h2>
+        <img src="/images/services/it-support.jpg" alt="IT Support" 
+             onload="this.style.border='2px solid green'; console.log('Service image loaded:', this.src);"
+             onerror="this.style.border='2px solid red'; console.error('Service image failed:', this.src);">
+        <p>If you see a green border, the service image loaded successfully.</p>
+    </div>
+    
+    <div class="test">
+        <h2>Logo Test</h2>
+        <img src="/images/logos/microsoft.svg" alt="Microsoft Logo" 
+             onload="this.style.border='2px solid green'; console.log('Logo loaded:', this.src);"
+             onerror="this.style.border='2px solid red'; console.error('Logo failed:', this.src);">
+        <p>If you see a green border, the logo loaded successfully.</p>
+    </div>
+    
+    <div class="test">
+        <h2>CSS Test</h2>
+        <link rel="stylesheet" href="/css/app.css" 
+              onload="console.log('CSS loaded successfully')"
+              onerror="console.error('CSS failed to load')">
+        <p>Check browser console for CSS loading status.</p>
+    </div>
+    
+    <script>
+        console.log('Simple test page loaded');
+        
+        // Test if we can fetch the images directly
+        setTimeout(() => {
+            console.log('Testing direct image access...');
+            
+            fetch('/images/bluebridge.png')
+                .then(response => {
+                    console.log('PNG fetch response:', response.status, response.statusText);
+                    if (response.ok) {
+                        console.log('✓ PNG image is accessible via fetch');
+                    } else {
+                        console.log('✗ PNG image fetch failed:', response.status);
+                    }
+                })
+                .catch(error => {
+                    console.log('✗ PNG fetch error:', error.message);
+                });
+                
+            fetch('/images/logos/microsoft.svg')
+                .then(response => {
+                    console.log('SVG fetch response:', response.status, response.statusText);
+                    if (response.ok) {
+                        console.log('✓ SVG image is accessible via fetch');
+                    } else {
+                        console.log('✗ SVG image fetch failed:', response.status);
+                    }
+                })
+                .catch(error => {
+                    console.log('✗ SVG fetch error:', error.message);
+                });
+        }, 1000);
+    </script>
+</body>
+</html>
