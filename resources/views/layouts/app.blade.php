@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/public/build/assets/app-JvQb1QrV.css">
     <link rel="stylesheet" href="/public/build/assets/app-OGDNwmkh.css">
+    <link rel="stylesheet" href="/public/css/centered-layout.css">
     
     <!-- JavaScript -->
     <script src="/public/build/assets/app-Bj43h_rG.js" defer></script>
